@@ -1,0 +1,530 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NITRR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"
+        integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <script src="script.js"></script> -->
+</head>
+
+<body>
+
+
+    <!-- HEADER -->
+    <header>
+        <div class="wrapper">
+            <div class="mainLogo">
+                <!-- <a id="logo" href="#home"><img src="assets/images/Rectangle_98.png" alt="Logo Image"> -->
+                <div class="subLogo">
+                    <img src="assets/images/logo.png" style="width: 100px;">
+                    <h4>NATIONAL INSTITUTE OF TECHNOLOGY, RAIPUR</h4>
+                    <h4>राष्ट्रीय प्रौद्योगिकी संस्थान, रायपुर</h4>
+                </div>
+                <!-- </a> -->
+
+            </div>
+            <div style="margin-bottom: 0px;">
+                <nav class="sub-nav">
+                    <div style="background-color: white;">
+                        <input class=" search" type="text" placeholder="Search">
+                        <i class="fas fa-search sub-nav-logo" style="color: #023E8A; padding: 0 10px;"></i>
+                    </div>
+                    <div style="background-color: #ADE8F4; margin: 0 10px;">
+                        <button id="click" onclick="drop()" style="background-color: #ADE8F4;">Quick Links
+                            <i class="fas fa-plus sub-nav-logo" style="color: #023E8A; padding-left: 70px;"></i>
+                        </button>
+                        <div id="menu">
+                            <a href="#">Online Fee Payment</a>
+                            <a href="#"><b>COVID-19 Notices/Orders</b></a>
+                            <a href="#">12th Convocation 2021</a>
+                            <a href="#">Appeal for Donation</a>
+                            <a href="#">How to Apply</a>
+                            <a href="#">Calender/Notices/Time Table</a>
+                            <a href="#" style="border: none;">Contact</a>
+                        </div>
+                    </div>
+                </nav><br>
+                <nav class="sub-nav" style="font-size: 105%;">
+                    For:
+                    <a>Future students</a> /
+                    <a>Current students</a> /
+                    <a>Faculty & Staff</a> /
+                    <a>Alumni</a> /
+                    <a>Parents</a>
+                </nav>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="bar" id="smallbar">
+                <span><a><i class="fas fa-home" style="font-size: 110%;"></i></a></span>
+                <span class="dropdown">
+                    <a>INSTITUTE ⏷</a>
+                    <span class="dropdown-content" style="grid-template-columns: auto auto auto;">
+                        <div>
+                            <h4>ABOUT</h4>
+                            <a>Genesis</a>
+                            <a>About</a>
+                            <a>Vision 2030</a>
+                        </div>
+                        <div>
+                            <h4>ADMINISTRATION</h4>
+                            <a>Board of Governors</a>
+                            <a>Director</a>
+                            <a>Deans</a>
+                            <a>Registrar</a>
+                            <a>Senate</a>
+                            <a>Building and Work Committee </a>
+                            <a>Finance Committee</a>
+                            <a>Administrative Staff</a>
+                            <a>Committees</a>
+                        </div>
+                        <div>
+                            <h4>REPORTS</h4>
+                            <a>Data for NIRF</a>
+                            <a>ARIIA 2022 Report</a>
+                        </div>
+                    </span>
+                </span>
+                <span class="dropdown">
+                    <a>ACADEMICS ⏷</a>
+                    <span class="dropdown-content" style="grid-template-columns: auto;">
+                        <div>
+                            <h4>DEPARTMENTS</h4>
+                            <div style="display: grid; grid-template-columns: auto auto;">
+                                <div>
+                                    <a>Bio-Medical Engineering</a>
+                                    <a>Bio-Technology</a>
+                                    <a>Chemical Engineering</a>
+                                    <a>Civil Engineering</a>
+                                    <a>Computer Science & Engineering</a>
+                                    <a>Electrical Engineering</a>
+                                    <a>Electronics & Communication Engineering</a>
+                                    <a>Information Technology</a>
+                                    <a>Mechanical Engineering</a>
+                                    <a>Mining Engineering</a>
+                                    <a>Metallurgical and Materials Engineering</a>
+                                </div>
+                                <div>
+                                    <a>Architecture</a>
+                                    <a>Applied Geology</a>
+                                    <a>Department of Chemistry</a>
+                                    <a>Department of Mathematics</a>
+                                    <a>Department of Humanities & Social Sciences</a>
+                                    <a>Department of Physics</a>
+                                    <a>Masters in Computer Applications</a>
+                                    <a>Workshop</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div>
+                            <h4>CENTRES</h4>
+                            <a>Continuing Education Centre</a>
+                            <a>Career Development Centre</a>
+                            <a>Central Computer Centre</a>
+                            <a>Training & Placement Cell</a>
+                        </div> -->
+                    </span>
+                </span>
+                <span class="dropdown">
+                    <a>STUDENTS ⏷</a>
+                    <span class="dropdown-content" style="grid-template-columns: auto auto;">
+                        <div>
+                            <h4>CURRENT STUDENTS</h4>
+                            <a>Admission & Fee Structure</a>
+                            <a>Ordinances</a>
+                            <a>Academic Calendar</a>
+                            <a>Notices / Time Table</a>
+                            <a>Syllabus</a>
+                            <a>Results</a>
+                            <a>Education Verification Procedure</a>
+                            <a>Student Clubs and Committees</a>
+                        </div>
+                        <div>
+                            <h4>PROSPECTIVE STUDENTS</h4>
+                            <a>How To Apply</a>
+                        </div>
+                        <!-- <div>
+                            <h4>CLUBS & COMMITTEES</h4>
+                            <a>Entrepreneurship Cell</a>
+                            <a>Innovation Cell</a>
+                            <a>Public Relations & Media Cell</a>
+                            <a>NSS/NCC</a>
+                            <a>TEDxNITRaipur</a>
+                            <a>Abhinay</a>
+                            <a>Click Club</a>
+                            <a>Nrityam</a>
+                            <a>Literati</a>
+                            <a>Raaga</a>
+                            <a>Sahyog</a>
+                            <a>Shaurya</a>
+                            <a>Technocracy</a>
+                        </div> -->
+                    </span>
+                </span>
+                <span class="dropdown">
+                    <a>RESEARCH ⏷</a>
+                    <span class="dropdown-content">
+                        <a>About</a>
+                    </span>
+                </span>
+                <span class="dropdown">
+                    <a>CAMPUS ⏷</a>
+                    <span class="dropdown-content" style="grid-template-columns: auto auto;">
+                        <div>
+                            <h4>FACILITIES</h4>
+                            <a>Central Library</a>
+                            <a>Hostels</a>
+                            <a>Medical Facilties</a>
+                            <a>Guest House</a>
+                            <a>Campus Security</a>
+                            <a>Estate Office</a>
+                            <a>Charges for Common Facilities</a>
+                            <a>Sports</a>
+                            <a>All-in-One Store</a>
+                            <a>Juice Corner & Coffee Day</a>
+                        </div>
+                        <div>
+                            <h4>SERVICES</h4>
+                            <a>Continuing Education Centre</a>
+                            <a>Career Development Centre</a>
+                            <a>Central Computer Centre</a>
+                            <a>Training & Placement Cell</a>
+                        </div>
+                    </span>
+                </span>
+                <span class="dropdown">
+                    <a>RESOURCES ⏷</a>
+                    <span class="dropdown-content" style="grid-template-columns: auto auto;">
+                        <div>
+                            <h4>MEDIA</h4>
+                            <a>NITRR Newsletter - MIRROR</a>
+                            <a>Shilpi</a>
+                            <a>Gallery</a>
+                        </div>
+                        <div>
+                            <h4>OTHER LINKS</h4>
+                            <a>MOUs</a>
+                            <a>Archives</a>
+                        </div>
+                    </span>
+                </span>
+                <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- END OF HEADER -->
+
+    <!-- MAIN CONTAINER -->
+    <section class="main-container">
+        <div>
+            <img class="slides" src="assets/images/image (2).png">
+            <img class="slides" src="assets/images/image (1).png">
+            <img class="slides" src="assets/images/image (2).jpg">
+            <!-- <img class="slides" src="assets/images/image (1).jpg"> -->
+            <img class="slides" src="assets/images/image (3).png">
+            <img class="slides" src="assets/images/image (3).jpg">
+            <img class="slides" src="assets/images/image (4).jpg">
+            <img class="slides" src="assets/images/image (5).jpg">
+            <img class="slides" src="assets/images/image (6).jpg">
+            <img class="slides" src="assets/images/image (8).jpg">
+            <img class="slides" src="assets/images/image (7).jpg">
+            <img class="slides" src="assets/images/image (9).jpg">
+            <img class="slides" src="assets/images/image (10).jpg">
+        </div>
+
+        <div class="news wrapper">
+            NEWS:&nbsp;&nbsp;
+            <marquee direction=" left" onmouseover="this.stop();" onmouseout="this.start();">
+                <a href="http://recruitment.nitrr.ac.in/" target="_blank" rel="noopener">Faculty Recruitment 2022</a>
+                <a href="../acad_downloads.php" target="_blank" rel="noopener">Important notice regarding Spring 2022
+                    admissions and semester registrations</a>
+                <a href="../acad_downloads.php" target="_blank" rel="noopener">Important notice regarding classes and
+                    academic activities in view of COVID-19</a>
+                <a href="http://www.nitrr.ac.in/stu_welfarenotice.php" target="_blank" rel="noopener">Extension for
+                    submission of application for Full Tuition fees reimbursement to students belonging to economically
+                    backward sections</a>
+                <a href="http://www.nitrr.ac.in/advertisement.php" target="_blank" rel="noopener">Important Information
+                    : Due to the ongoing pandemic situation, the date of written test and/ interview for the post of
+                    Library Trainee is postponed and will be informed shortly.
+                </a>
+                <a href="../admission.php" target="_blank" rel="noopener">Updated List of Applications received for PhD
+                    2021-2022 admissions</a>
+                <a href="http://www.nitrr.ac.in/stu_welfarenotice.php" target="_blank" rel="noopener">Full Tuition fees
+                    reimbursement to students belonging to economically backward sections</a>
+                <a href="http://www.nitrr.ac.in/acad_downloads.php" target="_blank" rel="noopener">Time Table for
+                    Online B.Tech. / B.Arch. &nbsp;First Sem Classes for the Autumn 2021</a>
+                <a href="http://www.nitrr.ac.in/acad_downloads.php" target="_blank" rel="noopener">Academic Calendar
+                    2021-22 (1st Semester B.Tech.&amp; B.Arch.)</a>
+                <a href="../admission.php" target="_blank" rel="noopener">PhD 2021 Entrance and Admission notice</a>
+                <a>NIT Raipur secured 64th rank in Engineering category of NIRF 2021</a>
+                <a href="http://www.nitrr.ac.in/downloads/ARI-U-0092_16_08_21.pdf" target="_blank" rel="noopener">ARIIA
+                    Report 2021</a>
+                <a href="donation.php" target="_blank" rel="noopener">Appeal for Donation</a>
+            </marquee>
+        </div>
+
+        <div class="buttons wrapper">
+            <a>
+                <div><i class="fas fa-address-card" style="font-size: 45px;"></i>
+                    <h4 style="padding-top: 20px;">MIS</h4>
+                </div>
+            </a>
+            <a>
+                <div><i class="fas fa-book-open" style="font-size: 45px;"></i>
+                    <h4 style="padding-top: 20px;">RESULTS</h4>
+                </div>
+            </a>
+            <a>
+                <div><i class="fas fa-trophy" style="font-size: 45px;"></i>
+                    <h4 style="padding-top: 20px;">ACHIEVEMENTS</h4>
+                </div>
+            </a>
+            <a>
+                <div><i class="fas fa-bullhorn" style="font-size: 45px;"></i>
+                    <h4 style="padding-top: 20px;">RECRUITMENT</h4>
+                </div>
+            </a>
+            <a>
+                <div><i class="fas fa-download" style="font-size: 45px;"></i>
+                    <h4 style="padding-top: 20px;">DOWNLOADS</h4>
+                </div>
+            </a>
+            <a>
+                <div>
+                    <i class="fas fa-child" style="font-size: 45px;"></i>
+                    <h4>STUDENT<br>WELFARE</h4>
+                </div>
+            </a>
+        </div>
+
+        <div class="notice">
+            <div class="wrapper">
+                <div class="box">
+                    <div style="background-color: #023E8A; margin: -10px -10px 10px -10px;">
+                        <button class="tablink active" onclick="openTab(event,'Notice')">NOTICES</button>
+                        <button class="tablink" onclick="openTab(event,'Announcements')">ANNOUNCEMENTS</button>
+                        <button class="tablink" onclick="openTab(event,'Tenders')">TENDERS</button>
+                    </div>
+
+                    <div id="Notice" class="tab">
+                        <!-- <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();" loop="infinite"> -->
+                        <a>16-12-2021</a>
+                        <a>Recruitment Notice for the Non-Teaching Posts (Superintending Engineer and Assistant
+                            Registrar)</a>
+                        <a>09-12-2021</a>
+                        <a>Induction/Orientation Program for all newly admitted B.Tech / B.Arch student</a>
+                        <a>12-11-2021</a>
+                        <a>Submission of Employees Income Tax Declaration for the FY 2021-22 through MIS
+                            portal</a>
+                        <a>11-11-2021</a>
+                        <a>Important Communication regarding the possibility of resuming physical Classes</a>
+                        <a>09-11-2021</a>
+                        <a>Notice for C.G. Post Matric Scholarship for ST, SC and OBC - 2021-22</a>
+                        <!-- </marquee> -->
+                    </div>
+
+                    <div id="Announcements" class="tab" style="display:none">
+                        <!-- <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();"> -->
+                        <a>16-12-2021</a>
+                        <a>Recruitment Notice for the Non-Teaching Posts (Superintending Engineer and Assistant
+                            Registrar)</a>
+                        <a>09-12-2021</a>
+                        <a>Induction/Orientation Program for all newly admitted B.Tech / B.Arch student</a>
+                        <a>12-11-2021</a>
+                        <a>Submission of Employees Income Tax Declaration for the FY 2021-22 through MIS
+                            portal</a>
+                        <a>11-11-2021</a>
+                        <a>Important Communication regarding the possibility of resuming physical Classes</a>
+                        <a>09-11-2021</a>
+                        <a>Notice for C.G. Post Matric Scholarship for ST, SC and OBC - 2021-22</a>
+                        <!-- </marquee> -->
+                    </div>
+
+
+                    <div id="Tenders" class="tab" style="display:none">
+                        <!-- <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();"> -->
+                        <a>16-12-2021</a>
+                        <a>Open Tender for:
+                            Hindi Newspaper Advertisement<br>
+                            English Newspaper Advertisement<br>
+                            Biomedical Engineering,<br>
+                            Biotechnology(01 Nos.)<br>
+                            Biotechnology(02 Nos.)<br>
+                            Biotechnology(03 Nos.)<br>
+                            Civil Engineering(01 Nos.)<br>
+                            Civil Engineering(02 Nos.)<br>
+                            Electrical Engineering</a>
+                        <a>09-12-2021</a>
+                        <a>Tender extension of Open Tender for Biotechnology
+                        </a>
+                        <a>12-11-2021</a>
+                        <a>Tender extension of Open Tender for Electrical Engineering
+                        </a>
+                        <a>11-11-2021</a>
+                        <a>Procurement of "AMC for MCR 102 Rheometer" for the Mechanical Engineering Department
+                            under Proprietary Basis.<br>
+                            Procurement of "Aspen Software" for the Chemical Engineering Department under
+                            Proprietary Basis. <br>
+                            Procurement of "Milli Q Water Purification Cartridge" for the Biotechnology
+                            Engineering
+                            Department under Proprietary Basis. <br>
+                        </a>
+                        <a>09-11-2021</a>
+                        <a>Notice for C.G. Post Matric Scholarship for ST, SC and OBC - 2021-22</a>
+                        <!-- </marquee> -->
+                    </div>
+
+
+
+                    <div style="text-align: right;">
+                        <button style="margin: 10px;">READ MORE</button>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div style="background-color: #023E8A; margin: -10px -10px 10px -10px;">
+                        <button>UPCOMING EVENTS</button>
+                    </div>
+                    <div>
+                        <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+                            <div class="tab2">
+                                <a>16-12-2021</a>
+                                <a>Recruitment Notice for the Non-Teaching Posts (Superintending Engineer and Assistant
+                                    Registrar)</a>
+                                <a>09-12-2021</a>
+                                <a>Induction/Orientation Program for all newly admitted B.Tech / B.Arch student</a>
+                                <a>12-11-2021</a>
+                                <a>Submission of Employees Income Tax Declaration for the FY 2021-22 through MIS
+                                    portal</a>
+                                <a>11-11-2021</a>
+                                <a>Important Communication regarding the possibility of resuming physical Classes</a>
+                                <a>09-11-2021</a>
+                                <a>Notice for C.G. Post Matric Scholarship for ST, SC and OBC - 2021-22</a>
+                            </div>
+                        </marquee>
+                    </div>
+                    <div style="text-align: right;">
+                        <button style="margin: 10px;">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="wrapper">
+                <h2>Welcome TO NIT RAIPUR</h2>
+                <p>Starting with two branches in 1956 the institute has grown in tandem with the major surrounding
+                    industries and presently offers 12 undergraduate, 11 Postgraduate and 18 Ph.D programs.</p>
+                <div class="grid">
+                    <div style="background-color: white; color: #023E8A; padding: 30px; font-size: 90%;">NIT Raipur is
+                        committed to the challenging task of the development of technical education by
+                        preparing seasoned graduates in highly sophisticated field of engineering and technology.
+                        Development of India as an emerging industrial power is a demanding exercise as it involves the
+                        combination of cost effectiveness and efficiency along with producing world-class technology at
+                        the cutting edge. And, for nearly five decades, we have been doing it with commitment and
+                        sincerity at NIT Raipur. Currently, the institute offers graduate level courses in twelve
+                        disciplines.</div>
+                    <div style="background-color: black;"><iframe width="426" height="240"
+                            src="https://www.youtube.com/embed/2qc7Zdl_8tM" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div id="gallery"
+                        style="background-image: url(assets/images/image_102.png); background-size: cover; position: relative;">
+                        <div style="position: absolute; top: 0; right:0;"><i class="fas fa-camera-retro"
+                                style="font-size: 250%; margin: auto;"></i><br>Gallery</div>
+                        <div style="position: absolute; bottom: 0; left:0;">
+                            <h4 style="background-color: black; padding: 10px 20px;">Take a tour of Life at NITRR!
+                            </h4>
+                        </div>
+                    </div>
+                    <div style="background-color: white; color: #023E8A;">
+                        <h4><b>NIT RAIPUR - NEWSLETTER</b></h4>
+                        <img id="#mirror" src="assets/images/image_101.png">
+                        <section style="display: grid; grid-template-columns: 1fr 1fr; font-size: 90%;">
+                            <a>
+                                <i class="fas fa-file-pdf" style="font-size: 250%; margin: auto;"></i>
+                                <h4>Download Latest Issue</h4>
+                            </a>
+                            <a>
+                                <i class="fas fa-newspaper" style="font-size: 250%; margin: auto;"></i>
+                                <h4>Subscribe to the Newsletter</h4>
+                            </a>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- END OF MAIN CONTAINER -->
+
+    <!-- LINKS -->
+    <section class="link">
+        <ul class="wrapper">
+            <div style="text-align: center; margin-right: 30px; font-size: 105%;">
+                <img src="assets/images/logo.png" style="width: 80px; padding-bottom: 10px;"><br>
+                <b>National Institute of Technology, Raipur</b><br>
+                <!-- <li>राष्ट्रीय प्रौद्योगिकी संस्थान, रायपुर</li> -->
+                G.E. Road, Raipur<br>Chattisgarh, India - 492010<br>
+                <a>+91-771-2254200</a><br>
+                <a>director@nitrr.ac.in</a><br><br>
+                <div class="logos">
+                    <a href="#"><i class="fab fa-facebook-square fa-2x logo"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-2x logo"></i></a>
+                    <a href="#"><i class="fab fa-twitter fa-2x logo"></i></a>
+                    <a href="#"><i class="fab fa-youtube fa-2x logo"></i></a>
+                </div>
+            </div>
+            <div>
+                <li><a>NIT Raipur at a Glance</a></li>
+                <li><a>Web OPAC</a></li>
+                <li><a>Annual Reports</a></li>
+                <li><a>Vision 2030</a></li>
+                <li><a>Unnat Bharat Abhiyan at NITRR</a></li>
+                <li><a>Year Wise Toppers List</a></li>
+                <li><a>RTI Act</a></li>
+                <li><a>Hindi Font</a></li>
+                <li><a>Pledge Certificate</a></li>
+            </div>
+            <div>
+                <li><a>MOUs</a></li>
+                <li><a>TEQIP III</a></li>
+                <li><a>Anti-Ragging System</a></li>
+                <li><a>MOOCs</a></li>
+                <li><a>Shilpi</a></li>
+                <li><a>NITRR Newsletter: MIRROR</a></li>
+                <li><a>Research Newsletter NIT Raipur</a></li>
+                <li><a>Institute Alumnus Awards</a></li>
+                <li><a>Terms & Conditions</a></li>
+            </div>
+            <div>
+                <li><a>NIT Raipur Library Discovery</a></li>
+                <li><a>NIT Act, Statues and Office Memorandum</a></li>
+                <li><a>National and Industrial Collaboration cell</a></li>
+                <li><a>SWAYAM Free Online Education</a></li>
+                <li><a>National Academic Depository (NAD)</a></li>
+                <li><a>Institute Innovation and Start-up Policy</a></li>
+                <li style="list-style: none;"><img src="assets/images/image_76.png" style="height: 40px;"></li>
+        </ul>
+    </section>
+    <!-- END OF LINKS -->
+
+    <!-- FOOTER -->
+    <footer>
+        Copyright © 2018, National Institute of Technology Raipur, All Rights Reserved
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        GSTIN: 22AAAJN0643G1ZN
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

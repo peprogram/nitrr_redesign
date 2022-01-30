@@ -552,6 +552,14 @@ footer {
 
 @media(max-width: 500px) {
 
+  .subLogo {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px 20px;
+  }
+
+  .subLogo img{ width: 80px !important;}
+
   #menu{
     margin: 0!important;
     width: 185px;
@@ -576,8 +584,10 @@ footer {
   .bar a.icon {
     padding: 10px;
     display: block;
-    margin: 5px 0;
+    color: var(--primary);
   }
+
+  .bar a.icon:focus {color: var(--dark);}
 
   .bar.responsive {
     position: relative;
@@ -697,9 +707,14 @@ footer {
    height: 200px;
    width: 250px;
  }
- .link .wrapper {
+
+ .link .wrapper{
+   grid-template-columns: auto auto auto;
+   margin-left: -15px;
+ }
+ .link .wrapper div:first-child {
   /* width: 100%; */
-  grid-template-columns: auto;
+  grid-column: 1/4;  
 }
 
 .link ul~div{

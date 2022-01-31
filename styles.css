@@ -17,6 +17,8 @@ html, body {
   font-family:  'Raleway', sans-serif;
   box-sizing: border-box;
   line-height: 1.4;
+  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
 }
 
 .wrapper{
@@ -148,7 +150,7 @@ header {
 
  .main-nav {
   background-color: var(--light);
-  margin-top: -100px;
+  margin-top: -130px;
   font-family: 'Hind', 'sans-serif';
 }
 
@@ -238,7 +240,7 @@ header {
 
   .slides{
       object-fit: cover;
-    height: 72%;
+    height: 70%;
     width: 100%;
   }
 
@@ -376,6 +378,8 @@ button a{
   font-size: 95%;
   font-family: 'Hind', 'sans-serif';
   font-weight: medium;
+  line-height: 1.2;
+text-decoration: none;
 }
 
 .tab>a:nth-child(odd), .tab2>a:nth-child(odd) {
@@ -497,10 +501,21 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media(max-width: 900px) {
+@media(min-width:950px) and (max-width: 1280px) {
+  header .wrapper{ width: 80%; }
+  .notice .wrapper{ width: 80%; }
+  .main-nav{ width: 100%;}
+  .news { width: 80%; }
+  .about .wrapper { width: 80%; }
+  .slides {height: 65%;}
+  .tab2 { grid-template-columns: 1fr 2.5fr;}
+}
+
+@media(max-width: 980px) {
 
   .mainLogo{ width:150% }
-  .sub-nav{ margin-left: 10%;}
+  .sub-nav{ margin-left: 15%;}
+  nav{ display: inline-block; }
 
   header .wrapper{ width: 90%; }
   .notice .wrapper{ width: 90%; }
@@ -519,7 +534,7 @@ footer {
     padding: 10px;
 }
 
-  .slides{height: 40%;}
+  .slides{height: 50%;}
 
   .buttons .svg-inline--fa{
     font-size: 40px !important;
@@ -532,8 +547,9 @@ footer {
   }
 
   .about .wrapper{
-    width: 80%;
+    width: 90%;
     font-size: 85% !important;
+    padding: 60px 0;
   }
 
   #mirror{
@@ -550,7 +566,7 @@ footer {
 
 }
 
-@media(max-width: 700px) {
+@media(max-width: 720px) {
   #menu{
     margin: 0 -10px!important;
   }
@@ -558,7 +574,6 @@ footer {
 
   .mainLogo{ width:175% }
   .sub-nav{ margin-left: 25%; }
-  nav{ display: inline-block; }
   nav div{ margin-bottom: 10px; }
   #click{ margin: 0 -10px; }
 
@@ -589,13 +604,24 @@ footer {
   }
   .link .wrapper {
     width: 90%;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
   }
+  .link .wrapper div:first-child {
+   /* width: 100%; */
+   grid-column: 1/4;  
+ }
+ 
+ .link ul~div{
+   margin: 0;
+ }
   footer { padding: 20px 50px; }
 }
 
-@media(max-width: 500px) {
+@media(max-width: 560px) {
 
+  html, body {
+    overflow-x: hidden;
+  }
   .subLogo {
     display: grid;
     grid-template-columns: auto auto;
@@ -684,14 +710,17 @@ footer {
     width: 270px !important;
   }
   input{
-    width: 188px;
+    width: 45vw;
   }
 }
 
-@media(max-width: 450px) {
+@media(max-width: 480px) {
   input{
     width: 34vw;
   }
+  .slides{
+    height: 35%;
+ }
 }
 
 @media(max-width: 400px) {
@@ -714,7 +743,7 @@ footer {
   }
 
   .slides{
-     height: 30%;
+     height: 25%;
   }
 
 .about .wrapper {
@@ -749,22 +778,10 @@ footer {
    height: 200px !important;
    width: 250px !important;
  }
-
- .link .wrapper{
-   grid-template-columns: auto auto auto;
-   margin-left: -15px;
- }
- .link .wrapper div:first-child {
-  /* width: 100%; */
-  grid-column: 1/4;  
+.link .wrapper{ margin-left: -15px; }
 }
 
-.link ul~div{
-  margin: 0;
-}
-}
-
-@media(max-width: 350px) {
+@media(max-width: 320px) {
   .sub-nav div {
     margin: 10px 35%!important;
   }

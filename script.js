@@ -23,13 +23,10 @@ function carousel() {
 }
 
 function drop() {
-  // var y = document.getElementById("clicky");
   var x = document.getElementById("menu");
   if (x.className.indexOf("show") == -1) { 
     x.className += " show";
     x.style.display="block";
-    // y.classList.toggle("active");
-    // x.style.after.content="\02796";
   } else {
     x.className = x.className.replace(" show", "");
     x.style.display="none";

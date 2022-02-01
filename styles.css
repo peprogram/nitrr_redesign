@@ -712,6 +712,7 @@ footer {
   .about {
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-position: center;
   }
 
   .about .wrapper{ padding: 20px 0; }

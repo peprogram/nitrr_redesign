@@ -17,12 +17,12 @@ html, body {
   font-family:  'Raleway', sans-serif;
   box-sizing: border-box;
   line-height: 1.4;
-  /* overflow-x: hidden; */
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 .wrapper{
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -30,10 +30,7 @@ img {
   max-width: 100%;
 }
 
-h1 {
-  padding-top: 60px;  
-}
-h2, h4 {
+h1, h2, h4 {
     margin: 0;
 }
 
@@ -49,17 +46,24 @@ header {
   }
   
   .mainLogo {
+    width: 110%;
     text-align: center;
     position: relative;
+    z-index: 1;
     /* background-image: url(assets/images/Rectangle_98.png);
-    background-position: center;
+    background-position: bottom;
     background-size: cover; */
     background-color: var(--primary);
     box-shadow: 1px 2px 2px 1px rgba(0,0,0,0.65);
   }
 
+  .mainLogo a{
+    color: var(--light);
+    text-decoration: none;
+  }
+
   .subLogo{
-      padding: 10px;
+      padding: 15px 10px;
   }
   
   .sub-nav {
@@ -150,7 +154,7 @@ header {
 
  .main-nav {
   background-color: var(--light);
-  margin-top: -130px;
+  margin-top: -80px;
   font-family: 'Hind', 'sans-serif';
 }
 
@@ -159,7 +163,7 @@ header {
 }
 
 .bar {
-  margin-left: 30%;
+  margin-left: 35%;
   width: 55%;
   display: grid;
   grid-template-columns: repeat(7,auto);
@@ -171,12 +175,13 @@ header {
 }
 
 .main-nav a{
+  color: var(--primary) !important;
       padding: 10px 5px;  
 }
 
 .main-nav a:hover {
   background-color: var(--primary);
-  color: var(--dark);
+  color: var(--dark) !important;
 }
 
   /* .dropdown {
@@ -188,26 +193,19 @@ header {
     display: none;
     position: absolute;
     background-color: var(--light);
-    /* text-align: center; */
     margin-top: 10px;
     width: 50%;
-    right:15%;
+    right:11%;
     box-shadow: 0px 0px 16px 2px rgba(255, 255, 255, 0.2);
     z-index: 1;
     padding: 10px;
-    /* transition: 2s ease; */
     animation:  growDown 200ms ease-in-out forwards;
-    transform-origin: top center
-    /* border: ; */
+    transform-origin: top center;
   } 
 
   @keyframes growDown {
-    0% {
-        transform: scaleY(0)
-    }
-    100% {
-        transform: scaleY(1)
-    }
+    0% { transform: scaleY(0) }
+    100% { transform: scaleY(1) }
 }
 
   .dropdown-content h4{
@@ -239,9 +237,32 @@ header {
   .dropdown:hover .dropdown-content {display: grid;}
 
   .slides{
+    scroll-behavior: smooth;
       object-fit: cover;
     height: 70%;
     width: 100%;
+    animation: slide 25s infinite;
+    
+  }
+
+  .slide:nth-child(2) {
+    animation-delay: 5s;
+  }
+  .slide:nth-child(3) {
+    animation-delay: 10s;
+  }
+  .slide:nth-child(4) {
+    animation-delay: 15s;
+  }
+  .slide:nth-child(5) {
+    animation-delay: 20s;
+  }
+
+    @keyframes slide {
+      10% { opacity: 1; }
+      20% { opacity: 1; }
+      30% { opacity: 0; }
+      40% { transform: scale(1.1); }
   }
 
 
@@ -313,6 +334,16 @@ header {
     grid-column-gap: 20px;
 }
 
+.reveal{
+  position: relative;
+  transform: translateY(15px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.reveal.now{
+  transform: translateY(0);
+  opacity: 1;
+}
 /* .notice a{ text-decoration: none; } */
 
 .box{
@@ -325,7 +356,8 @@ header {
 
 button{
     font-family: 'Hind', sans-serif;
-    font-size: 110%;
+    font-size: 100%;
+    font-weight: bold;
     cursor: pointer;
     border: 0;
     color: var(--dark);
@@ -343,6 +375,7 @@ button a{
 
 .tab{
     /* padding: 10px; */
+    /* position: relative; */
     overflow: auto;
     height: 220px;
     display: grid;
@@ -401,6 +434,43 @@ text-decoration: none;
 padding: 60px;
 }
 
+.about h1{
+  overflow: hidden; 
+  white-space: nowrap; 
+  margin: 20px auto; 
+  /* letter-spacing: .15em;  */
+  animation: typing 3.5s steps(50, end) infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+/* .about h1::after{
+  animation: 
+    erasing 3.5s steps(40, end) infinite;
+}
+@keyframes erasing {
+  from { width: 100% }
+  to { width: 0 }
+} */
+
+h2{
+  font-size: 250%;
+}
+
+#chart {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-size: 120%;
+  font-family: 'Hind', sans-serif;
+}
+
+#chart div {
+  margin: auto;
+  padding: 10px;
+}
+
+#chart p {margin: 0}
 .grid{
     margin: 20px 0;
     display: grid;
@@ -442,9 +512,6 @@ padding: 60px;
 }
 #gallery a{ color: var(--light); }
 
-#mirror{
-/* margin: -10px 0; */
-}
 
 /* LINKS */
 .link {
@@ -478,14 +545,12 @@ padding: 60px;
 }
 
 .logos a{
+  color: var(--light);
   padding: 5px;
-  /* font-size: 90%; */
+  font-size: 85%;
 }
 
-.logo {
-  /* color: var(--dark); */
-  background-color: #222;
-}
+
 
 /* FOOTER */
 footer {
@@ -501,26 +566,19 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media(min-width:950px) and (max-width: 1280px) {
-  header .wrapper{ width: 80%; }
-  .notice .wrapper{ width: 80%; }
+@media(min-width:981px) and (max-width: 1280px) {
   .main-nav{ width: 100%;}
-  .news { width: 80%; }
-  .about .wrapper { width: 80%; }
   .slides {height: 65%;}
   .tab2 { grid-template-columns: 1fr 2.5fr;}
+  .bar {width: 55%; margin-left: 33%;}
 }
 
 @media(max-width: 980px) {
 
   .mainLogo{ width:150% }
   .sub-nav{ margin-left: 15%;}
-  nav{ display: inline-block; }
-
-  header .wrapper{ width: 90%; }
-  .notice .wrapper{ width: 90%; }
+  .wrapper{width: 90%;}
   .main-nav{ width: 100%; margin-top: 0px; }
-  .news { width: 90%; }
 
   .bar {
     width: 90%;
@@ -547,7 +605,6 @@ footer {
   }
 
   .about .wrapper{
-    width: 90%;
     font-size: 85% !important;
     padding: 60px 0;
   }
@@ -619,9 +676,6 @@ footer {
 
 @media(max-width: 560px) {
 
-  html, body {
-    overflow-x: hidden;
-  }
   .subLogo {
     display: grid;
     grid-template-columns: auto auto;
@@ -633,6 +687,10 @@ footer {
   #menu{
     margin: 0!important;
     width: 185px;
+  }
+
+  #chart {
+    grid-template-columns: auto auto;
   }
 
   body{

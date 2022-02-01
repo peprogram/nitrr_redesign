@@ -43,6 +43,21 @@ function openTab(evt,tabName) {
     for (i = 0; i < x.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-    document.getElementById(tabName).style.display = "grid";
-    evt.currentTarget.className += " active";
+  document.getElementById(tabName).style.display = "grid";
+  evt.currentTarget.className += " active";
+}
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("now");
+    } else {
+      reveals[i].classList.remove("now");
+    }
   }
+}
+window.addEventListener("scroll", reveal);

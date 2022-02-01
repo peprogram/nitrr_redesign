@@ -325,6 +325,9 @@ header {
 .notice {
     background-image: url(assets/images/blue\ bbg.png);
     background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 .notice .wrapper{
@@ -705,6 +708,11 @@ footer {
   .sub-nav{ margin: 0; text-align: center;}
   nav{ display: inline-block; }
   #click{ margin: 0; }
+
+  .about {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
 
   .about .wrapper{ padding: 20px 0; }
 

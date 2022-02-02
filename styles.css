@@ -339,7 +339,7 @@ header {
 
 .reveal{
   position: relative;
-  transform: translateY(15px);
+  transform: translateY(50px);
   opacity: 0;
   transition: 1s all ease;
 }
@@ -458,22 +458,28 @@ padding: 60px;
 } */
 
 h2{
-  font-size: 250%;
+  font-size: 300%;
 }
 
 #chart {
+  margin:auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  font-size: 120%;
+  width: fit-content;
+  padding-bottom: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 130%;
   font-family: 'Hind', sans-serif;
 }
 
 #chart div {
-  margin: auto;
-  padding: 10px;
+  /* border: 2px solid var(--light); */
+  /* margin: auto; */
+  padding: 5px;
+  /* margin: 0 5px; */
 }
 
 #chart p {margin: 0}
+
 .grid{
     margin: 20px 0;
     display: grid;
@@ -506,6 +512,8 @@ h2{
     text-decoration: underline;
     cursor: pointer;
 }
+
+iframe {margin: auto; height: 100%; width: 100%;}
 
 #gallery  {
   background-image: url(assets/images/image_102.png);
@@ -552,6 +560,7 @@ h2{
   padding: 5px;
   font-size: 85%;
 }
+
 
 
 
@@ -615,11 +624,11 @@ footer {
   #mirror{
     width: 200px !important;
   }
-
+/* 
   iframe{
     width: 380px !important;
-    /* height: 203px; */
-  }
+    height: 203px;
+  } */
   .grid{
     grid-template-columns: 1fr 1fr;
   }
@@ -643,7 +652,7 @@ footer {
   .notice .wrapper{
     grid-template-columns: auto;
   }
-  .box { margin: 5px 0; }
+  .box { margin: 10px 0; }
   .box button {
     padding: 10px 30px;
   }
@@ -670,6 +679,7 @@ footer {
    /* width: 100%; */
    grid-column: 1/4;  
  }
+ iframe{height: 240px;}
  
  .link ul~div{
    margin: 0;
@@ -691,10 +701,10 @@ footer {
     margin: 0!important;
     width: 185px;
   }
-
+/* 
   #chart {
     grid-template-columns: auto auto;
-  }
+  } */
 
   body{
     font-size: 90%;
@@ -773,9 +783,9 @@ footer {
   .tab {
     grid-template-columns: 1fr 3fr;
   }
-  iframe{
-    width: 270px !important;
-  }
+  /* iframe{
+    height: 100%z;
+  } */
   input{
     width: 45vw;
   }
@@ -841,10 +851,10 @@ footer {
 .about p{
   margin: 0 20px;
 }
- iframe{
+ /* iframe{
    height: 200px !important;
    width: 250px !important;
- }
+ } */
 .link .wrapper{ margin-left: -15px; }
 }
 

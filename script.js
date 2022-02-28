@@ -1,3 +1,17 @@
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("fix").style.padding = "0";
+    document.getElementById("head").style.position = "fixed";
+    document.getElementById("head").style.marginBottom = "50px";
+  } else {
+    document.getElementById("head").style.position = "static";
+    document.getElementById("fix").style.padding = "10px 0";
+    document.getElementById("head").style.marginBottom = "0px";
+  }
+}
+
 function hamburger() {
   var x = document.getElementById("smallbar");
   if (x.className === "bar") {

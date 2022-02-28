@@ -99,10 +99,9 @@ header {
 
   .sub-nav div{
     font-family: 'Source Sans Pro', 'sans-serif';
-      /* width: fit-content;  
-      display: inline;  */
       float: right;
   }
+
 
   input{
       border: 0;
@@ -757,7 +756,7 @@ footer {
     padding: 10px 20px;
   } */
 
-  .subLogo img{ width: 80px !important;}
+  .subLogo img{ width: 80px !important; height: 80px !important;}
 
   #menu{
     margin: 0!important;
@@ -771,6 +770,8 @@ footer {
   body{
     font-size: 90%;
   }
+  .subLogo { padding: 0 10px 10px 10px; margin: 0 auto !important;}
+  .subLogo h3 {text-align: center;}
   .mainLogo{
     position: static;
     width: 100%;
@@ -787,11 +788,16 @@ footer {
     margin: 10px;
     float: none;
   }
-  .sub-nav div:first-child {padding-top: 10px;}
-  .sub-nav div>div {width: 70vw !important; margin: 5px auto !important;}
+  /* .sub-nav div:first-child {padding-top: 10px;} */
+  .sub-nav div>div {width: 60vw !important; margin: 5px auto !important;}
+  .sub-nav div>div:last-child {width: 80vw !important; margin-top: 10px !important;}
+  .search {width:50vw}
   /* nav{ display: inline-block; } */
-  #click{ margin: 0; width: 70vw}
-#input {width: 100% !important}
+  #click{ margin: 0; width: 60vw}
+  #click svg { padding-left: 30vw !important;}
+  #login button {width:60vw}
+/* #input {width: 100% !important} */
+#menu {width:60vw !important}
   .about {
     background-attachment: fixed;
     background-repeat: no-repeat;

@@ -446,12 +446,10 @@ button a{
 
 
 .tab a, .tab2 a{
-    /* font-family: 'Source Sans Pro', sans-serif; */
+    font-family: 'Source Sans Pro', sans-serif;
     /* color: black; */
     padding: 5px;
     border-bottom: 1px dotted var(--yellow3);
-    -webkit-font-feature-settings: "lnum";
-    -moz-font-feature-settings: "lnum";
     font-feature-settings: "lnum";
 }
 
@@ -783,19 +781,21 @@ footer {
   #fix { position: static;}
   header nav { grid-template-columns: 1fr !important;}
   header nav a { margin: 0 5px !important;}
-  header nav>div{ padding: 0 10px; display: block !important; margin: auto !important; }
+  header nav>div{ padding: 0 10px; display: grid !important; grid-template-columns: auto; margin: auto !important; }
   .sub-nav{text-align: center;}
   .sub-nav div {
+    margin: 10px;
     float: none;
   }
-  .sub-nav div>div {width: 80vw !important;}
+  .sub-nav div:first-child {padding-top: 10px;}
+  .sub-nav div>div {width: fit-content !important;}
   /* nav{ display: inline-block; } */
   #click{ margin: 0; }
 
   .about {
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;;
   }
 
   .about .wrapper{ padding: 20px 0; }
@@ -864,33 +864,29 @@ footer {
     width: 35vw;
   } */
 
-  .grid div { margin: 1vh; padding: 2% 4% !important;}
+  .grid div { margin: 1vh; padding: 2% 4% !important; font-size: 110% !important}
   .grid h3 {margin: 5% !important}
 }
 
 @media(max-width: 480px) {
-  input{
+  /* input{
     width: 34vw;
-  }
+  } */
   .slides{
     height: 35%;
  }
 }
 
 @media(max-width: 400px) {
-
+/* 
   input{
     width: 145px;
-  }
+  } */
   .sub-nav {
     text-align: center;
     /* margin: auto !important; */
   }
-  .sub-nav div {
-    width: max-content;
-    margin: 10px 47.5%!important;
-    float: none;
-  }
+
 
   .box button{
     padding: 9.5px ;

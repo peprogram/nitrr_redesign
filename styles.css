@@ -446,7 +446,6 @@ button a{
 
 
 .tab a, .tab2 a{
-    font-family: 'Source Sans Pro', sans-serif;
     /* color: black; */
     padding: 5px;
     border-bottom: 1px dotted var(--yellow3);
@@ -456,13 +455,13 @@ button a{
 .tab>a:nth-child(even), .tab2>a:nth-child(even) {
   margin:auto 0;
   font-size: 95%;
-  /* font-family: 'Ralea', 'sans-serif'; */
   font-weight: medium;
   line-height: 1.2;
 text-decoration: none;
 }
 
 .tab>a:nth-child(odd), .tab2>a:nth-child(odd) {
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
   font-size: 85%;
   text-align: center;
@@ -544,9 +543,8 @@ h2{
     /* cursor: pointer; */
 }
 
-.grid h4{
-    margin: 20px;  
-    /* font-weight: normal;  */
+.grid>div:nth-child(odd) {
+  padding: 5% 10% !important;
 }
 
 .grid a{
@@ -561,7 +559,7 @@ h2{
 
 .grid button {
   margin: 10px 0;
-  width: 80%;
+  width: 100%;
   /* outline: 2px outset var(--yellow3); */
 }
 .grid a:hover{

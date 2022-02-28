@@ -936,6 +936,11 @@ footer {
  } */
 .link .wrapper{ margin-left: -15px; }
 }
+
+.sub-nav div>div {width: 70vw !important; }
+.sub-nav div>div:last-child {width: 90vw !important; }
+#click{ margin: 0; width: 70vw}
+#login button {width:70vw}
 .search {width:45vw}
 #click svg { padding-left: 25vw !important;}
 

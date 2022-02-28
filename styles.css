@@ -927,15 +927,17 @@ footer {
   height: auto;
 } */
 
-.about p{
+/* .about p{
   margin: 0 20px;
-}
+} */
  /* iframe{
    height: 200px !important;
    width: 250px !important;
  } */
 .link .wrapper{ margin-left: -15px; }
 }
+.search {width:45vw}
+#click svg { padding-left: 25vw !important;}
 
 @media(max-width: 320px) {
   .sub-nav div {

@@ -472,7 +472,7 @@ text-decoration: none;
     background-size: cover;
     /* background-attachment: fixed;
     background-repeat: no-repeat; */
-    background-position: bottom;
+    /* background-position: bottom; */
     color: var(--blue);
 }
 
@@ -922,18 +922,6 @@ footer {
   grid-template-columns: auto !important;
 }
 
-/* .grid div {
-  width: min-content;
-  height: auto;
-} */
-
-/* .about p{
-  margin: 0 20px;
-} */
- /* iframe{
-   height: 200px !important;
-   width: 250px !important;
- } */
 .link .wrapper{ margin-left: -15px; }
 
 .search {width:45vw}
@@ -942,9 +930,7 @@ footer {
 
 
 @media(max-width: 320px) {
-  .sub-nav div {
-    margin: 10px 35%!important;
-  }
+  #click svg { padding-left: 20vw !important;}
   .box button{
     width: 100%;
   }

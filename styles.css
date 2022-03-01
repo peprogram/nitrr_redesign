@@ -210,8 +210,6 @@ header {
   /* background-color: var(--yellow3); */
   }
 
-  .bar span:first-child{ display: none;}
-
   .dropdown-content {
     display: none;
     position: absolute;
@@ -816,7 +814,7 @@ footer {
   .bar a {margin:-10px 0 !important;}
   .bar {padding: 20px; }
   .bar span  {display: none; background-color: var(--yellow3);}
-  .bar span:first-child  { background-color: var(--white); padding: 5px; margin: 5px 0;}
+  .bar span:first-child  { background-color: var(--white); margin-top: 10px;}
   .bar a.icon {
     position: absolute;
     right: 15;

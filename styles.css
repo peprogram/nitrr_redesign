@@ -842,7 +842,7 @@ footer {
     margin-bottom: 10px !important;
   }
 
-  .bar.responsive .icon::before { content: "CLOSE" !important;}
+  .bar.responsive .icon::before { content: "CLOSE  " !important;}
   .bar.responsive span {
     float: none;
     display: block;
@@ -863,6 +863,7 @@ footer {
   }
 
   .bar.responsive a { margin: -10px 0 !important; width: auto; font-weight: bold; }
+  .bar.responsive a:last-child {margin-bottom: 5px !important;}
 
   .bar.responsive span > span > div > div {grid-template-columns: auto !important;}
 

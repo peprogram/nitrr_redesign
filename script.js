@@ -11,7 +11,6 @@ function scrollFunction() {
     document.getElementById("head").style.position = "static";
     document.getElementById("fix").style.padding = "10px 0";
     document.getElementById("head").style.marginBottom = "0px";
-    if (screen.width<=560)
     document.getElementById("hb").style.display = "block";
   }
 }

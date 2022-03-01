@@ -760,9 +760,9 @@ footer {
     padding: 10px 20px;
   } */
 
-  #hb {display: none !important;}
+  /* #hb {display: none !important;}
 #mob_hb {display: block !important; text-align: center; border-bottom: 1px solid var(--blue);}
-#mob_hb a {text-decoration: none;}
+#mob_hb #menu a {text-decoration: none; color: var(--white) !important; margin: 5px 0 !important; background-color: var(--blue3);} */
   .subLogo img{ width: 80px !important; height: 80px !important;}
 
   #menu{
@@ -784,24 +784,24 @@ footer {
     width: 100%;
     box-shadow: none;
   }
-  /* #head { position: static !important; margin-bottom: 0 !important;}
-  #fix { position: static;} */
+  #head { position: static !important; margin-bottom: 0 !important;}
+  #fix { position: static;}
   #fix>a {margin: auto !important;}
   header nav { grid-template-columns: 1fr !important;}
   header nav a { margin: 0 5px !important;}
   header nav>div{ padding: 5px 0;  margin: auto !important; }
-  .sub-nav{text-align: center; }
+  .sub-nav{text-align: center; margin: 5px 10px}
   .sub-nav div {
     margin: 10px;
     float: none;
   }
   /* .sub-nav div:first-child {padding-top: 10px;} */
-  /* .sub-nav div>div {width: 60vw !important; margin: 5px auto !important;}
-  .sub-nav div>div:last-child {width: 80vw !important; margin-top: 10px !important;} */
-  .search {width:50vw; outline: 1px solid var(--blue);}
+  .sub-nav div>div {width: 60vw !important; margin: 5px auto !important;}
+  .sub-nav div>div:last-child {width: 80vw !important; margin-top: 10px !important;}
+  .search {width:50vw;}
   #click{ margin: 0; width: 60vw;}
   #click svg { padding-left: 30vw !important;}
-  #login button {width:60vw; margin-left: -10px;}
+  #login button {width:60vw;}
 /* #input {width: 100% !important} */
 #menu {width:60vw !important}
   .about {

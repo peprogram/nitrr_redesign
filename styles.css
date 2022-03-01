@@ -761,8 +761,8 @@ footer {
   } */
 
   /* #hb {display: none !important;}
-#mob_hb {display: block !important; text-align: center; border-bottom: 1px solid var(--blue);}
-#mob_hb #menu a {text-decoration: none; color: var(--white) !important; margin: 5px 0 !important; background-color: var(--blue3);} */
+#mob_hb {display: block !important; text-align: center; border-bottom: 1px solid var(--blue);} */
+/* #mob_hb #menu a {text-decoration: none; color: var(--white) !important; margin: 5px 0 !important; background-color: var(--blue3);} */
   .subLogo img{ width: 80px !important; height: 80px !important;}
 
   #menu{
@@ -784,7 +784,7 @@ footer {
     width: 100%;
     box-shadow: none;
   }
-  #head { position: static !important; margin-bottom: 0 !important;}
+  /* #head { position: static !important; margin-bottom: 0 !important;} */
   #fix { position: static;}
   #fix>a {margin: auto !important;}
   header nav { grid-template-columns: 1fr !important;}

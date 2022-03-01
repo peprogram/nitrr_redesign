@@ -39,7 +39,7 @@
                     </a>
                     <!-- </a> -->
                     <!-- </div> -->
-                    <div style="float: right; margin: auto 0; padding-top: 5px;">
+                    <div id="hb" style="float: right; margin: auto 0; padding-top: 5px;">
                         <div id="login" style="margin-left: 10px;"><button>LOGIN</button></div>
                         <div style="background-color: white; position: relative;">
                             <input class=" search" type="text" placeholder="Search">
@@ -59,7 +59,31 @@
                                 <a href="http://nitrr.ac.in/convocation.php" style="border: none;">Contact</a>
                             </div>
                         </div>
-                        <div style="margin-top: 10px;">
+                        <div style="margin-top: 10px; font-size: 105%;">
+                            For:
+                            <a href="http://nitrr.ac.in/how_to_apply.php">Future students</a> /
+                            <a style="white-space:nowrap">Current students</a> /
+                            <a style="white-space:nowrap">Faculty & Staff</a> /
+                            <a href="http://gecnitrralumni.org/">Alumni</a> /
+                            <a>Parents</a>
+                        </div>
+                    </div>
+                    <div id="mob_hb">
+                        <div style="margin: 0 10px;">
+                            <button id="click" onclick="drop()">Quick Links
+                                <i class="fas fa-plus sub-nav-logo" style="color: #00296b; padding-left: 70px;"></i>
+                            </button>
+                            <div id="menu">
+                                <a href="http://nitrr.ac.in/onlinepay.php">Online Fee Payment</a>
+                                <a href="http://nitrr.ac.in/covid19.php"><b>COVID-19 Notices/Orders</b></a>
+                                <a href="http://nitrr.ac.in/convocation.php">12th Convocation 2021</a>
+                                <a href="http://nitrr.ac.in/donation.php">Appeal for Donation</a>
+                                <a href="http://nitrr.ac.in/convocation.php">How to Apply</a>
+                                <a href="http://nitrr.ac.in/convocation.php">Calender/Notices/Time Table</a>
+                                <a href="http://nitrr.ac.in/convocation.php" style="border: none;">Contact</a>
+                            </div>
+                        </div>
+                        <div style="margin-top: 10px; font-size: 105%;">
                             For:
                             <a href="http://nitrr.ac.in/how_to_apply.php">Future students</a> /
                             <a style="white-space:nowrap">Current students</a> /
@@ -73,6 +97,15 @@
         </div>
         <nav class="main-nav">
             <div class="bar" id="smallbar">
+                <span>
+                    <div id="mob_hb" style="margin: auto 0; padding-top: 20px;">
+                        <div>
+                            <input class=" search" type="text" placeholder="Search">
+                            <i class="fas fa-search sub-nav-logo" style="color: #00296b; padding: 0 10px;"></i>
+                        </div>
+                        <div id="login" style="margin-left: 10px;"><button>LOGIN</button></div>
+                    </div>
+                </span>
                 <span class="dropdown"><a href="https://peprogram.github.io/nitrr_redesign/"
                         style="text-decoration: none;"><i class="fas fa-home"
                             style="font-size: 110%; padding: 0 5px;"></i></a></span>
@@ -242,8 +275,8 @@
                         </div>
                     </span>
                 </span>
-                <a href="javascript:void(0);" class="icon" onclick="hamburger()">
-                    <i class="fa fa-bars"></i>
+                <a href="javascript:void(0);" class="icon" onclick="hamburger()" style="text-decoration: none;">
+                    MENU <i class="fa fa-bars" style="padding-left: 10px;"></i>
                 </a>
             </div>
         </nav>
@@ -466,8 +499,6 @@
                         <h2>18</h2>
                         <p>Ph.D. Programs</p>
                     </div>
-                    <!-- <p>Starting with two branches in 1956 the institute has grown in tandem with the major surrounding
-                        industries and presently offers 12 undergraduate, 11 Postgraduate and 18 Ph.D programs.</p> -->
                 </div>
                 <!-- <div><img src="assets/images/cutout.png" style="width: 100%;"></div> -->
                 <div class="grid reveal">
@@ -535,6 +566,8 @@
                             <!-- </div> -->
                         </a>
                     </div>
+                </div>
+                <div class="grid reveal">
                     <div class="reveal"
                         style="background: linear-gradient(132deg, rgba(0,80,157,1) 47%, rgba(0,63,136,1) 88%);">
                         <h3 style="color: #fff;">NIT Raipur is located in the capital city of Chattisgarh,
@@ -556,6 +589,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <!-- END OF MAIN CONTAINER -->

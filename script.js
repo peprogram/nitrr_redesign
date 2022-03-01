@@ -12,14 +12,23 @@ function scrollFunction() {
   }
 }
 
+
+// function responsive() {
+//   document.getElementById("head").style.position = "static";
+//   document.getElementById("fix").style.position = "static";
+// }
+
 function hamburger() {
   var x = document.getElementById("smallbar");
   if (x.className === "bar") {
     x.className += " responsive";
+    // responsive();
   } else {
     x.className = "bar";
+    // document.getElementById("head").style.position = "fixed";
   }
 }
+
 
 var slideIndex = 0;
 carousel();

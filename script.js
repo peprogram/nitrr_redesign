@@ -3,6 +3,7 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
     document.getElementById("fix").style.padding = "0";
+    document.getElementById("fix").style.marginBottom = "-10px";
     document.getElementById("head").style.position = "fixed";
     document.getElementById("main").style.marginTop = "30vh";
     if (screen.width<=560)
@@ -10,6 +11,7 @@ function scrollFunction() {
   } else {
     document.getElementById("head").style.position = "static";
     document.getElementById("fix").style.padding = "10px 0";
+    document.getElementById("fix").style.marginBottom = "0px";
     document.getElementById("main").style.marginTop = "0px";
     document.getElementById("hb").style.display = "block";
   }

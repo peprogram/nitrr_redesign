@@ -12,7 +12,6 @@ function scrollFunction() {
     document.getElementById("fix").style.padding = "10px 0";
     document.getElementById("main").style.marginTop = "0px";
     document.getElementById("hb").style.display = "block";
-    document.getElementById("name").style.fontSize = "100%";
   }
 }
 

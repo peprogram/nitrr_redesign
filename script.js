@@ -4,31 +4,24 @@ function scrollFunction() {
   if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
     document.getElementById("fix").style.padding = "0";
     document.getElementById("head").style.position = "fixed";
-    document.getElementById("head").style.marginBottom = "50px";
+    document.getElementById("main").style.marginTop = "30vh";
     if (screen.width<=560)
     document.getElementById("hb").style.display = "none";
   } else {
     document.getElementById("head").style.position = "static";
     document.getElementById("fix").style.padding = "10px 0";
-    document.getElementById("head").style.marginBottom = "0px";
+    document.getElementById("main").style.marginTop = "0px";
     document.getElementById("hb").style.display = "block";
+    document.getElementById("name").style.fontSize = "100%";
   }
 }
-
-
-// function responsive() {
-//   document.getElementById("head").style.position = "static";
-//   document.getElementById("fix").style.position = "static";
-// }
 
 function hamburger() {
   var x = document.getElementById("smallbar");
   if (x.className === "bar") {
     x.className += " responsive";
-    // responsive();
   } else {
     x.className = "bar";
-    // document.getElementById("head").style.position = "fixed";
   }
 }
 
@@ -45,7 +38,7 @@ function carousel() {
   slideIndex++;
   if (slideIndex > x.length) {slideIndex = 1}
   x[slideIndex-1].style.display = "block";
-  setTimeout(carousel, 2000); // Change image every 2 seconds
+  setTimeout(carousel, 3000); // Change image every 2 seconds
 }
 
 function drop() {

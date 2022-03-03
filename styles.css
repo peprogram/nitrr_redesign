@@ -543,7 +543,7 @@ h2{
 iframe { margin: auto; height: 100%; width: 100%; border-radius: 2px;}
 
 #gallery  {
-  background-image: url(assets/images/image_102.png);
+  background-image: url(assets/images/image_102.webp);
   background-size: cover;
   background-position: top;
   position: relative;

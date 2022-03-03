@@ -458,7 +458,7 @@ text-decoration: none;
 .about {
     text-align: center;
     /* background-color: var(--white); */
-    background-image: url(assets/images/white\ bg.png);
+    background-image: url(assets/images/white\ bg.webp);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;

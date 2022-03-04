@@ -61,9 +61,6 @@ header {
   
   .mainLogo {
     width: 110%;
-    /* float: left; */
-    /* text-align: center; */
-    /* position: relative; */
     z-index: 1;
     /* background-image: url(assets/images/Rectangle_98.png);
     background-position: bottom;
@@ -727,18 +724,14 @@ footer {
 }
 
 @media(max-width: 560px) {
-/* 
-  .subLogo {
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 10px 20px;
-  } */
 
   /* #hb {display: none !important;}
 #mob_hb {display: block !important; text-align: center; border-bottom: 1px solid var(--blue);} */
 /* #mob_hb #menu a {text-decoration: none; color: var(--white) !important; margin: 5px 0 !important; background-color: var(--blue3);} */
   .subLogo img{ width: 80px !important; height: 80px !important;}
-
+.slides{
+  image-rendering: optimizeQuality;
+}
   #menu{
     margin: 0!important;
     width: 185px;
@@ -782,6 +775,7 @@ footer {
 
   button {padding: 10px 5px;}
 
+  .dropdown:hover {width: auto}
   .about .wrapper{ padding: 20px 0; }
   .bar a {margin:-10px 0 !important;}
   .bar {padding: 20px; }
